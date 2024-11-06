@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="mx-24 h-[700px] place-items-center flex-col">
+    <h1 class="font-bold text-5xl text-[#FF67B2] my-12">Nantap's Doughnut's</h1>
+    <div id="top" class="w-10/12 bg-white shadow-md flex justify-between h-20 px-5 rounded-xl border border-[#c0c0c0
+    ]">
+        <div class="flex
+         justify-between items-center">
+
+
+            <p id="price " class="mr-3">Price:</p>
+            <span id="setPrice" class = "bg-white shadow-md py-3 px-3 rounded-xl w-20 mr-3 border border-[#c0c0c0]">0</span>
+
+
+            <button id="priceBtn" class="py-3 px-3 rounded-xl bg-[#FF67B2] text-white shadow-md">Edit price<i class="fa-solid fa-pen w-6"></i></button>
+          
+        </div>
+
+        <div class="flex justify-between items-center ">
+            <p id="supply " class="mr-3">Stock:</p>
+            <span id="stock" class = "bg-white shadow-md py-3 px-3 rounded-xl w-20 mr-3 border border-[#c0c0c0]">0</span>
+
+
+            <button id="supplyBtn" class="py-3 px-3 rounded-xl bg-[#FF67B2] text-white shadow-md">Edit price<i class="fa-solid fa-pen w-6"></i></button>
+        </div>
+
+        <div class="flex justify-between items-center ">
+            <p id="price " class="mr-3">Available:</p>
+            <span id="available" class = "bg-white shadow-md py-3 px-3 rounded-xl w-20 mr-3 border border-[#c0c0c0]">0</span>
+
+
+        </div>
+    </div>
+
+<div id="bottom" class="flex w-10/12">
+    <div id="main" class="w-3/4 h-screen flex justify-center place-items-center  flex-col">
+        <div id="img" class="flex-col justify-center place-items-center" >
+            <img class="z-10" src="img/Group 1.png" alt="">
+
+            <div class="inputs flex justify-between">
+                <div id="txt">
+                    <p>name</p>
+                    <input id="name" class="w-[402px] h-[68px] rounded-[10px] p-[20px] border border-[#c0c0c0]" type="text" placeholder="Customers name">
+                </div>
+
+                <div id="txt" class="mx-4">
+                    <p>Quantity</p>
+                    <input id="qty" class="w-[100px] h-[68px] rounded-[10px] p-[20px] border border-[#c0c0c0]" type="number" placeholder="qty">
+                </div>
+
+
+            </div>
+
+            <div id="btn">
+            <button id="save" class="w-[402px] h-[48px] bg-[#FF67B2] text-white rounded-[10px] mt-[20px]">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="left" class="w-2/4 h-screen my-[40px] border border-[#c0c0c0] p-5 rounded-[10px] shadow-xl">
+        <div id="container" class="my-14 flex-col justify-center w-fuxll h-[400px] ">
+            <h3 class="text-[#FF67B2] text-center text-[30px]">History</h3>
+            <p class=" flex place-items-center border-b border-[#c0c0c0] py-5"><span class="w-3/4">name</span> <span class="mx-5 flex w-1/4">quantity</span>  <span class="w-1/4">price</span></p>
+            <ul id="history">
+                <!-- <li class=" flex place-items-center border-b border-[#c0c0c0] py-5">
+                    <span class="w-3/4">name</span> 
+                    <span class="mx-5 flex w-1/4">quantity</span>  
+                    <span  class="bg-white shadow-md py-3 px-3 rounded-xl w-1/4 mr-3 border border-[#c0c0c0]">price</span>
+                </li>              -->
+            </ul>
+        </div>
+        <div id="total">
+            <ul>
+            <p class=" flex place-items-center border-t border-[#c0c0c0] py-5">
+                <span class="w-3/4">Total:</span>
+                <span id="total" class = "bg-white shadow-md py-3 px-3 rounded-xl w-1/4 mr-3 border border-[#c0c0c0]">0</span>
+            </p>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+<script src="script/java.js"></script>
+</body>
+</html>
